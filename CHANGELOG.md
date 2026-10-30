@@ -1,6 +1,6 @@
 # 更新记录
 
-## 0.3.0（build 4）— 未发布
+## 0.3.0（build 4）— 2026-10-30
 
 - 工程：Package.swift、单元测试、GitHub Actions CI；build.sh 改用 `swift build`，版本号集中在 build.sh 顶部。
 - 打包后的 App 只使用随包运行库，不再回退到 Homebrew 或开发机路径（开发构建仍可回退，或设 `LOCALSHIFT_ALLOW_SYSTEM_RUNTIME=1`）。
