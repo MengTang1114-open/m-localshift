@@ -1,0 +1,7 @@
+name,value
+"中文,多行
+内容",00123
+decimal,0.1234567890123456789
+large,12345678901234567890
+literal_formula,=1+2
+amount,123.45

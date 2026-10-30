@@ -1,0 +1,20 @@
+{
+  "comment": "Pinned third-party runtimes. Change a version only together with its sha256, then run tools/verify_release.sh.",
+  "ffmpeg": [
+    {"name": "ffmpeg.zip", "url": "https://ffmpeg.martin-riedl.de/download/macos/arm64/1789931890_9.0.2/ffmpeg.zip", "sha256": "c8ed4c4e6978a03c485edbfe4e0a5dc2380f8a30bba5150531b31b094492d924"},
+    {"name": "ffprobe.zip", "url": "https://ffmpeg.martin-riedl.de/download/macos/arm64/1789931890_9.0.2/ffprobe.zip", "sha256": "fcbe839537485eaee7a7a8bc5cbc0f90d53617e80943e8a5b2e31cb851197ea6"}
+  ],
+  "python": {"name": "cpython-3.12.15+20261009-aarch64-apple-darwin-install_only_stripped.tar.gz", "url": "https://github.com/astral-sh/python-build-standalone/releases/download/20261009/cpython-3.12.15%2B20261009-aarch64-apple-darwin-install_only_stripped.tar.gz", "sha256": "233f8e15255b3e1d1fd47ea5dd5230dfed803f371138e896e54d98c60ae19f6f"},
+  "wheels": [
+    {"name": "python_docx-1.2.0-py3-none-any.whl", "url": "https://files.pythonhosted.org/packages/py3/p/python-docx/python_docx-1.2.0-py3-none-any.whl", "sha256": "3fd478f3250fbbbfd3b94fe1e985955737c145627498896a8a6bf81f4baf66c7"},
+    {"name": "openpyxl-3.1.5-py2.py3-none-any.whl", "url": "https://files.pythonhosted.org/packages/py2.py3/o/openpyxl/openpyxl-3.1.5-py2.py3-none-any.whl", "sha256": "5282c12b107bffeef825f4617dc029afaf41d0ea60823bbb665ef3079dc79de2"},
+    {"name": "et_xmlfile-2.0.0-py3-none-any.whl", "url": "https://files.pythonhosted.org/packages/py3/e/et-xmlfile/et_xmlfile-2.0.0-py3-none-any.whl", "sha256": "7a91720bc756843502c3b7504c77b8fe44217c85c537d85037f0f536151b2caa"},
+    {"name": "pillow-12.3.0-cp312-cp312-macosx_11_0_arm64.whl", "url": "https://files.pythonhosted.org/packages/cp312/p/pillow/pillow-12.3.0-cp312-cp312-macosx_11_0_arm64.whl", "sha256": "ffd0c5368496f41b0944be820fcb7a838aa6e623d250b01acf2643939c3f99d7"},
+    {"name": "reportlab-5.0.1-py3-none-any.whl", "url": "https://files.pythonhosted.org/packages/py3/r/reportlab/reportlab-5.0.1-py3-none-any.whl", "sha256": "1c36e6bb0e71780c72331eba60da7f602e8d4389a8723825af71342e49d791e8"},
+    {"name": "pypdf-6.20.1-py3-none-any.whl", "url": "https://files.pythonhosted.org/packages/py3/p/pypdf/pypdf-6.20.1-py3-none-any.whl", "sha256": "aa5a55ddcffdc5e5ab291d5decb23f6383f4e56f8e3263dc39af41fff03885ad"},
+    {"name": "lxml-6.1.3-cp312-cp312-macosx_10_13_universal2.whl", "url": "https://files.pythonhosted.org/packages/cp312/l/lxml/lxml-6.1.3-cp312-cp312-macosx_10_13_universal2.whl", "sha256": "0c0710ac085a157b593c38fbcacd950f15c4afa8e2057527185875ab302752bc"},
+    {"name": "charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl", "url": "https://files.pythonhosted.org/packages/cp312/c/charset-normalizer/charset_normalizer-3.5.2-cp312-cp312-macosx_10_13_universal2.whl", "sha256": "ed2a239c0ea213acc1908150a3037257083c7c083128f1a4cec2ec4b97dca491"},
+    {"name": "typing_extensions-4.16.0-py3-none-any.whl", "url": "https://files.pythonhosted.org/packages/py3/t/typing-extensions/typing_extensions-4.16.0-py3-none-any.whl", "sha256": "481caa481374e813c1b176ada14e97f1f67a4539ce9cfeb3f350d78d6370c2e8"}
+  ],
+  "libreoffice": {"name": "LibreOffice_26.2.6.2_MacOS_aarch64.dmg", "url": "https://downloadarchive.documentfoundation.org/libreoffice/old/26.2.6.2/mac/aarch64/LibreOffice_26.2.6.2_MacOS_aarch64.dmg", "sha256": "f8d37fca7b7cda5898f77845d599d7820832dcb6614786d8c558367a5633bf96"}
+}

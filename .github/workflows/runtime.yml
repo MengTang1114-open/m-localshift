@@ -1,0 +1,48 @@
+name: Runtime
+
+# Full build with the bundled FFmpeg, Python and LibreOffice, then real conversions.
+# macOS minutes are expensive on a private repo, so this runs only when runtime
+# files change or when started by hand (Actions → Runtime → Run workflow).
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - tools/runtime.lock.json
+      - tools/bootstrap_runtime.py
+      - tools/bundle_runtime.py
+      - work/vendor/**
+      - build.sh
+
+concurrency:
+  group: runtime-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  regression:
+    runs-on: macos-15
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/cache@v4
+        with:
+          path: .runtime/downloads
+          key: runtime-downloads-${{ hashFiles('tools/runtime.lock.json') }}
+      - name: Prepare runtime
+        run: python3 tools/bootstrap_runtime.py
+      - name: Build app with runtime
+        run: ./build.sh
+      - name: Regression (real conversions)
+        run: ./test.sh "$RUNNER_TEMP/regression"
+      - name: Package DMG
+        run: tools/make_dmg.sh
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: regression-report
+          path: ${{ runner.temp }}/regression/report.json
+          if-no-files-found: ignore
+      - uses: actions/upload-artifact@v4
+        with:
+          name: LocalShift-dmg
+          path: dist/
+          retention-days: 7

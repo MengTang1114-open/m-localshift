@@ -1,0 +1,9 @@
+Case,Exact value
+spaces,  alpha  beta   
+tab,alpha	beta
+newline,"alpha
+beta"
+combined,"  alpha  beta	gamma
+second  "
+unicode,"本地  文字	Ω
+尾行"

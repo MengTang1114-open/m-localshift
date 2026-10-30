@@ -1,0 +1,26 @@
+LocalShift media runtime provenance
+
+Supplier: Martin Riedl FFmpeg Build Server
+Supplier home: https://ffmpeg.martin-riedl.de/
+Build source repository: https://git.martin-riedl.de/ffmpeg/build-script
+Pinned build: macOS arm64 release9.0.2,build1789931890_9.0.2
+Download URLs:
+ https://ffmpeg.martin-riedl.de/download/macos/arm64/1789931890_9.0.2/ffmpeg.zip
+ https://ffmpeg.martin-riedl.de/download/macos/arm64/1789931890_9.0.2/ffprobe.zip
+The adjacent .zip.sha256 files were retrieved from the same supplier and
+matched before extraction. verification.json records archive/binary hashes,
+Mach-O deployment targets,signatures,dependencies and actual smoke checks.
+
+These executables report GNU General Public License version3 or later.
+FFMPEG-LICENSE.txt is the actual ffmpeg -L output. The supplier's versions
+and build script identify the linked third-party libraries. Before any
+external redistribution,retain the applicable licenses and provide the
+complete corresponding source and build material for this pinned build,
+including linked GPL components. LocalShift releases point to the supplier and
+build script above for that source.
+
+Compatibility evidence: native arm64,LC_BUILD_VERSION minos12.0,and only
+macOS system framework/library dependencies. No load commands,minos or
+vendor signatures were patched. Runtime checks execute on the development
+host recorded in verification.json;an actual macOS13 device run is still
+required before claiming device-level support.

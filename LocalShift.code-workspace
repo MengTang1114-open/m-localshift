@@ -1,0 +1,21 @@
+{
+  "folders": [
+    {
+      "name": "LocalShift",
+      "path": "."
+    }
+  ],
+  "settings": {
+    "files.exclude": {
+      "**/.DS_Store": true
+    },
+    "search.exclude": {
+      "LocalShift.app": true,
+      "work": true,
+      "releases": true
+    }
+  },
+  "extensions": {
+    "recommendations": []
+  }
+}

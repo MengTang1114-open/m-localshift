@@ -1,0 +1,15 @@
+* text=auto
+*.swift text eol=lf
+*.py text eol=lf
+*.sh text eol=lf
+*.applescript text eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.icns binary
+*.docx binary
+*.xlsx binary
+*.epub binary
+# Preserve CSV fixtures' intentional spaces, CRLF and quoted embedded newlines.
+*.csv -text -whitespace

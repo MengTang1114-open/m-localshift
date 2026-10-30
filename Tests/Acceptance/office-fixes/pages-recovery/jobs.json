@@ -1,0 +1,112 @@
+[
+  {
+    "name": "pdf-to-pages",
+    "source": "work/functional/fixtures/sample.pdf",
+    "target": "pages"
+  },
+  {
+    "name": "docx-to-pages",
+    "source": "work/functional/fixtures/sample.docx",
+    "target": "pages"
+  },
+  {
+    "name": "pages-to-docx",
+    "source": "work/functional/fixtures/sample.pages",
+    "target": "docx"
+  },
+  {
+    "name": "pages-to-pdf",
+    "source": "work/functional/fixtures/sample.pages",
+    "target": "pdf"
+  },
+  {
+    "name": "pages-to-txt",
+    "source": "work/functional/fixtures/sample.pages",
+    "target": "txt"
+  },
+  {
+    "name": "pages-to-md",
+    "source": "work/functional/fixtures/sample.pages",
+    "target": "md"
+  },
+  {
+    "name": "pages-to-html",
+    "source": "work/functional/fixtures/sample.pages",
+    "target": "html"
+  },
+  {
+    "name": "pages-to-epub",
+    "source": "work/functional/fixtures/sample.pages",
+    "target": "epub"
+  },
+  {
+    "name": "pages-to-png",
+    "source": "work/functional/fixtures/sample.pages",
+    "target": "png"
+  },
+  {
+    "name": "pages-to-jpg",
+    "source": "work/functional/fixtures/sample.pages",
+    "target": "jpg"
+  },
+  {
+    "name": "md-to-pages",
+    "source": "work/functional/fixtures/sample.md",
+    "target": "pages"
+  },
+  {
+    "name": "rtf-to-pages",
+    "source": "work/functional/fixtures/sample.rtf",
+    "target": "pages"
+  },
+  {
+    "name": "rtfd-to-pages",
+    "source": "work/functional/fixtures/sample.rtfd",
+    "target": "pages"
+  },
+  {
+    "name": "textclipping-to-pages",
+    "source": "work/functional/fixtures/sample.textclipping",
+    "target": "pages"
+  },
+  {
+    "name": "epub-to-pages",
+    "source": "work/functional/fixtures/sample.epub",
+    "target": "pages"
+  },
+  {
+    "name": "txt-to-pages",
+    "source": "work/functional/fixtures/sample.txt",
+    "target": "pages"
+  },
+  {
+    "name": "continuous-1-epub-to-pages",
+    "source": "work/functional/fixtures/sample.epub",
+    "target": "pages"
+  },
+  {
+    "name": "continuous-2-pdf-to-pages",
+    "source": "work/functional/fixtures/sample.pdf",
+    "target": "pages"
+  },
+  {
+    "name": "continuous-3-docx-to-pages",
+    "source": "work/functional/fixtures/sample.docx",
+    "target": "pages"
+  },
+  {
+    "name": "continuous-4-epub-to-pages",
+    "source": "work/functional/fixtures/sample.epub",
+    "target": "pages"
+  },
+  {
+    "name": "continuous-5-pdf-to-pages",
+    "source": "work/functional/fixtures/sample.pdf",
+    "target": "pages"
+  },
+  {
+    "name": "continuous-6-epub-to-pages",
+    "source": "work/functional/fixtures/sample.epub",
+    "target": "pages"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  [
+    "Case",
+    "Exact value"
+  ],
+  [
+    "spaces",
+    "  alpha  beta   "
+  ],
+  [
+    "tab",
+    "alpha\tbeta"
+  ],
+  [
+    "newline",
+    "alpha\nbeta"
+  ],
+  [
+    "combined",
+    "  alpha  beta\tgamma\nsecond  "
+  ],
+  [
+    "unicode",
+    "本地  文字\tΩ\n尾行"
+  ]
+]

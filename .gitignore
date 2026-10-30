@@ -1,0 +1,33 @@
+# Local application bundles, large runtimes and generated evidence
+/LocalShift.app/
+/releases/
+/Evidence/
+/work/*
+!/work/vendor/
+/work/vendor/*
+!/work/vendor/ffmpeg-9.0.2/
+!/work/vendor/webp13/
+/work/vendor/ffmpeg-9.0.2/*
+!/work/vendor/ffmpeg-9.0.2/verify-runtime.py
+!/work/vendor/ffmpeg-9.0.2/FFMPEG-LICENSE.txt
+!/work/vendor/ffmpeg-9.0.2/PROVIDER-NOTICE.txt
+/work/vendor/webp13/*
+!/work/vendor/webp13/prepare.sh
+
+# Local state, caches and credentials
+.DS_Store
+__pycache__/
+*.py[cod]
+.swiftpm/
+.build/
+.env
+.env.*
+!.env.example
+*.p12
+*.pfx
+*.key
+*.mobileprovision
+
+# Prepared third-party runtimes and packaged builds
+/.runtime/
+/dist/

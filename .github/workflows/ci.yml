@@ -1,0 +1,33 @@
+name: CI
+
+# macOS minutes count 10x on a private repo. main only fast-forwards to PRs that
+# already passed here, so pushes to main do not run again; promo and text-only
+# changes do not touch the app and are skipped.
+on:
+  pull_request:
+    paths-ignore:
+      - promo/**
+      - docs/**
+      - '**.md'
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build-and-test:
+    # Runtime-free checks only: FFmpeg, LibreOffice and Pages acceptance runs on a
+    # prepared Mac with tools/verify_release.sh before every release.
+    runs-on: macos-15
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - name: Toolchain
+        run: swift --version
+      - name: Unit tests
+        run: swift test
+      - name: Acceptance harnesses compile
+        run: tools/check_harnesses.sh
+      - name: App bundle (without bundled runtimes)
+        run: LOCALSHIFT_SKIP_RUNTIME=1 ./build.sh
