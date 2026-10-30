@@ -10,7 +10,7 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/MengTang1114-personal/localshift-mac/releases/latest">下载</a> ·
+  <a href="https://github.com/MengTang1114-open/m-localshift/releases/latest">下载</a> ·
   <a href="docs/INSTALL.md">安装说明</a> ·
   <a href="CHANGELOG.md">更新记录</a> ·
   <a href="LICENSE">GPLv3</a>
@@ -65,7 +65,7 @@
 
 ## 安装
 
-1. 从 [Releases](https://github.com/MengTang1114-personal/localshift-mac/releases/latest) 下载 `LocalShift-<版本>.dmg`，把 LocalShift 拖进「应用程序」。
+1. 从 [Releases](https://github.com/MengTang1114-open/m-localshift/releases/latest) 下载 `LocalShift-<版本>.dmg`，把 LocalShift 拖进「应用程序」。
 2. 第一次打开时 macOS 会拦一下：这个版本还没有 Apple 开发者签名。按 [安装说明](docs/INSTALL.md) 放行一次，之后正常使用。
 
 要求：Apple 芯片（M1 及以后）的 Mac，macOS 13 或更新。FFmpeg、LibreOffice、Python 都已打包在 App 里，不用另外安装。转换 Pages 文件需要装有 Apple Pages。
