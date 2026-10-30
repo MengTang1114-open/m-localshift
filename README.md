@@ -41,6 +41,15 @@
 
 不想用快捷键，也可以把文件拖进窗口，在轮盘上点格式，再按「转换」。可以一次放多个文件，排队依次处理。
 
+<p align="center">
+  <img src="docs/images/main-light.png" width="49%" alt="浅色模式下的主窗口">
+  <img src="docs/images/main-dark.png" width="49%" alt="深色模式下的主窗口">
+</p>
+
+<p align="center">
+  <img src="docs/images/guide-light.png" width="72%" alt="浅色模式下的使用说明">
+</p>
+
 ## 能做什么
 
 | 类别 | 转换 | 工具 |
